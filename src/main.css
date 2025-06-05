@@ -1,0 +1,88 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+/* === Global Orange-Yellow Theme === */
+:root {
+  --primary-color: #ff9900;
+  --secondary-color: #fff3cd;
+  --accent-color: #ffc107;
+  --text-color: #4a2d00;
+  --background-color: #fff8e1;
+  --card-bg-color: #fff7d1;
+  --shadow-color: rgba(34, 27, 16, 0.2);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+}
+
+/* Buttons */
+button,
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover,
+.btn:hover {
+  background-color: var(--accent-color);
+}
+
+/* Cards / Boxes */
+.card,
+.step,
+.info-box {
+  background-color: var(--card-bg-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px var(--shadow-color);
+  padding: 20px;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Icons */
+.icon {
+  color: var(--primary-color);
+}
+
+/* Utility classes */
+.bg-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-accent {
+  color: var(--accent-color);
+}

@@ -1,0 +1,39 @@
+.listed-container {
+  /* optional, for contrast */
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.listed-title {
+  font-size: 30px;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo-grid img {
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 2 per row on medium screens */
+@media (max-width: 800px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1 per row on small screens */
+@media (max-width: 480px) {
+  .logo-grid {
+    grid-template-columns: 1fr;
+  }
+}

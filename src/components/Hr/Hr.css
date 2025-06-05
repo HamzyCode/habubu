@@ -1,0 +1,29 @@
+.custom-hr {
+  opacity: 0.6;
+  margin: 50px auto;
+  border: none;
+  border-top: 2px solid #ff9900;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px #ff990044;
+  width: 50%;
+  transition: width 0.3s ease;
+}
+
+/* Responsive widths */
+@media (max-width: 1024px) {
+  .custom-hr {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-hr {
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-hr {
+    width: 95%;
+  }
+}

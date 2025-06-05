@@ -1,0 +1,42 @@
+.how-to-buy-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.how-to-buy-container h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* Reduced gap */
+  flex-wrap: wrap;
+}
+
+.step {
+  padding: 20px;
+  width: 230px; /* Reduced width */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.circle {
+  color: white;
+  background-color: #ff9900;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px auto;
+}
+
+.step p {
+  font-size: 14px;
+  line-height: 1.6;
+}

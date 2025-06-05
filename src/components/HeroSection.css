@@ -1,0 +1,179 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.logo {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  height: auto;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: bold;
+
+  margin-top: 0;
+}
+
+/* === Buttons === */
+
+.button-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: thin;
+  font-size: 15px;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  height: 45px;
+}
+
+.btn-primary {
+  color: white;
+  border: none;
+  width: 220px;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 2px solid #ff9900;
+  color: #ff9900;
+  background-color: white;
+  width: 160px;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+/* === Responsive: Stack buttons vertically on small screens === */
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 220px; /* Keep same width stacked */
+  }
+  .logo {
+    width: auto;
+    height: 120px;
+  }
+}
+
+/* === Contract Box === */
+.contract-box {
+  background-color: #fff8e1;
+  padding: 20px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+  margin-top: 40px;
+
+  box-shadow: 0 0 0 3px #ff9900; /* 4px shadow on all sides */
+}
+
+.contract-label {
+  font-size: 14px;
+  color: #ff9900;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contract-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  word-break: break-word;
+  color: #ff9900;
+  border: 1px solid #e4caff;
+}
+
+.contract-address {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.copy-icon {
+  color: #ff9900;
+  cursor: pointer;
+}
+
+.contract-box input {
+  outline: 2px solid #ff9900 !important; /* Outline color */
+  outline-offset: 2px !important; /* Optional: space between border and outline */
+}
+
+.contract-box {
+  padding: 16px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.border-animated::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 2px;
+  background: linear-gradient(270deg, orange, gold, orange);
+  background-size: 400% 400%;
+  animation: borderMove 1.5s linear;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.copy-feedback {
+  font-size: 0.85rem;
+  color: orange;
+  margin-top: 6px;
+}
