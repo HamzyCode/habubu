@@ -10,7 +10,7 @@ export default function HeroSection() {
   const [copied, setCopied] = useState(false);
   const [borderActive, setBorderActive] = useState(false);
 
-  const contractAddress = "JB2wezZLdzWfnaCfHxLg193RS3Rh51ThiXxEDwQDpump";
+  const contractAddress = "habubu12345hbad12345jasd1434123pump";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(contractAddress).then(() => {
