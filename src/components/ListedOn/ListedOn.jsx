@@ -8,7 +8,7 @@ import "./ListedOn.css";
 export default function ListedOn() {
   return (
     <div className="listed-container">
-      <h1 className="listed-title">We have been listed on</h1>
+      <h1 className="listed-title">We are listed on</h1>
       <div className="logo-grid">
         <img src={dext} alt="Dextools" />
         <img src={dexs} alt="Dexscreener" />

@@ -6,14 +6,14 @@ export default function Footer() {
     <footer className="footer-container">
       <div className="footer-icons">
         <a
-          href="#"
+          href="https://t.me/habubuofficial"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaTelegramPlane />
         </a>
         <a
-          href="#"
+          href="https://x.com/habubuofficial"
           target="_blank"
           rel="noopener noreferrer"
         >

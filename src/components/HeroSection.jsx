@@ -10,7 +10,7 @@ export default function HeroSection() {
   const [copied, setCopied] = useState(false);
   const [borderActive, setBorderActive] = useState(false);
 
-  const contractAddress = "habubu12345hbad12345jasd1434123pump";
+  const contractAddress = "ExEWjVp4EtUcp9Fcvbyb7TA77owyFJo9o8pJJ1JVpump";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(contractAddress).then(() => {
@@ -35,11 +35,11 @@ export default function HeroSection() {
       <h1 className="subtitle">the original fan token on solana</h1>
 
       <div className="button-group">
-        <a href="#" className="btn btn-primary">
+        <a href="https://t.me/habubuofficial" className="btn btn-primary">
           <FaTelegramPlane size={16} />
           Join the community
         </a>
-        <a href="#" className="btn btn-outline">
+        <a href="https://dexscreener.com/solana/ExEWjVp4EtUcp9Fcvbyb7TA77owyFJo9o8pJJ1JVpump" className="btn btn-outline">
           <FiExternalLink size={16} />
           View chart
         </a>
